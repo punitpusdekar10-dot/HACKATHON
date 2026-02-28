@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hack-The-Site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            background:#111;
+            color:white;
+        }
+
+        header{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:20px 60px;
+            background:black;
+            position:sticky;
+            top:0;
+        }
+
+        .logo{
+
+            font-size:28px;
+            font-weight:bold;
+            color:#ff4d00;
+        }
+
+        nav ul{
+            list-style:none;
+            display:flex;
+            gap:30px;
+        }
+
+        nav ul li a{
+            text-decoration:none;
+            color:white;
+            font-size:18px;
+            transition:0.3s;
+        }
+
+        nav ul li a:hover{
+            color:#ff4d00;
+        }
+
+        .box{
+            height:90vh;
+            background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+            url('https://as1.ftcdn.net/v2/jpg/05/69/40/36/1000_F_569403660_ttD83vqzRXzLJ1dH9yiJbDeC2tLk4Hm1.jpg');
+            background-size:cover;
+            background-position:center;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+        }
+
+        .box h1{
+            font-size:60px;
+        }
+
+        .box p{
+            margin:20px 0;
+            font-size:22px;
+        }
+
+        .btn{
+            padding:12px 30px;
+            background:green;
+            border:none;
+            color:white;
+            font-size:18px;
+            cursor:pointer;
+            border-radius:5px;
+            transition:0.3s;
+        }
+
+        .btn:hover{
+            background:rgb(1, 57, 1);
+        }
+
+        section{
+            padding:80px 60px;
+            text-align:center;
+        }
+
+        h2{
+            font-size:40px;
+            margin-bottom:20px;
+            color:#ff4d00;
+        }
+
+        .services{
+            
+            display:flex;
+            justify-content:center;
+            gap:30px;
+            flex-wrap:wrap;
+        }
+
+        .container{
+            background:#222;
+            padding:30px;
+            width:250px;
+            border-radius:10px;
+            transition:0.3s;
+        }
+
+        .container:hover{
+            transform:translateY(-10px);
+        }
+
+        .contact form{
+            max-width:500px;
+            margin:auto;
+            display:flex;
+            flex-direction:column;
+            gap:15px;
+        }
+
+        input, textarea{
+            padding:12px;
+            border:none;
+            border-radius:5px;
+        }
+        .Container3 button{
+            background-color:#ff4d00;
+        }
+         .Container3 button:hover{
+            background-color:#742503;
+        }
+        footer{
+            background:black;
+            text-align:center;
+            padding:20px;
+            margin-top:40px;
+        }
+         .Container2{
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+            url("https://as2.ftcdn.net/v2/jpg/07/25/69/51/1000_F_725695123_EdU8KtQiKQgFuSw7pdAQfkvy0enf9kBg.jpg");
+            background-size: cover;
+            background-position: center;
+
+        }
+        /* #aboutPara{
+            width: 100vh;
+            height: 200px;
+            text-align: center;
+            justify-content: center;
+            max-width:800px;
+            margin:auto;
+            display:flex;
+        } */
+         
+        @media(max-width:768px){
+            header{
+                flex-direction:column;
+                gap:15px;
+            }
+            .box h1{
+                font-size:40px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">HACK THE SITE</div>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="box">
+    <div>
+        <h1>No System is Safe</h1>
+        <p>Hack the system before the system hacks you.</p>
+        <button class="btn">TRY TO HACK</button>
+    </div>
+</div>
+
+
+<div class="Container1">
+    <section id="about">
+        <h2>About Us</h2>
+        <p id="aboutPara">
+            Welcome to Hack-The-Site:- This website provide you a platform to try your hacking skill by 
+            trying to hack the site with the help of hacking tools such as Cross-site Scripting , SQLInjection,
+            DDOS attack and many more things.Here, you can learn how to find the vulnerability in the website 
+            by which you can then report it to make the system gets more secure.
+        </p>
+    </section>
+</div>
+<div class="Container2">
+    <section id="services">
+        <h2 id="serviceId">Our Services</h2>
+        <div class="services">
+            <div class="container">
+                <h3>Cross-site Scripting</h3>
+                <p>Cross-Site Scripting (XSS) is a web security vulnerability where an attacker injects
+                malicious JavaScript into a website.
+                <br>
+                    </p>
+                <p> When other users open that page, the malicious script runs in their browser.</p>
+            </div>
+
+            <div class="container">
+                <h3>SQL Injection</h3>
+                <p>SQL Injection is a web security attack where an attacker inserts malicious SQL code into a website’s
+                    input field (like login or search) to manipulate the database.
+                    <br>
+                It happens when user input is directly used in SQL queries without proper validation.</p>
+            </div>
+
+            <div class="container">
+                <h3>DDoS Attack</h3>
+                <p>DDoS (Distributed Denial of Service) attack is a cyberattack where multiple computers send a huge amount of traffic to a website or server to make it slow or completely unavailable.
+                    <br>
+                    “Distributed” means the attack comes from many systems (often infected computers called a botnet).</p>
+            </div>
+        </div>
+    </section>
+</div>
+<div class="Container3">
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="4" placeholder="Your Message"></textarea>
+            <button class="btn">Send Message</button>
+        </form>
+    </section>
+</div>
+<footer>
+    <p>© 2026 Hack The Site | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
